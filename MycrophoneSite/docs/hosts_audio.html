@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hosts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <script src="js/underscore-1.1.6.js"></script>
+    <script type="text/javascript" src="https://www.parse.com/downloads/javascript/parse-1.2.2.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.2.min.js"></script>
+   
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Mycrophone</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./events.html">Events</a>
+              </li>
+              <li class="">
+                <a href="./speakers.html">Speakers</a>
+              </li>
+              <li class="">
+                <a href="./option.html">Hosts</a>
+              </li>
+              <li class="">
+                <a href="./help.html">Help</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <img src="assets/img/logoMycrophone-01.png" height="120" width="120" align="right"  >
+    <h1>Browse Audio Questions</h1>
+    <p class="lead">Please choose one of your Rooms below.</p>
+  <div>
+  
+</header>
+<!--START
+  
+      
+      <div class="login">
+        <form class="login-form">
+          <h2>Log In</h2>
+          <div class="error" style="display:none"></div>
+          <input type="text" id="login-username" placeholder="Username" />
+          <input type="password" id="login-password" placeholder="Password" />
+          <button>Log In</button>
+        </form>
+
+        <form class="signup-form">
+          <h2>Sign Up</h2>
+          <div class="error" style="display:none"></div>
+          <input type="text" id="signup-username" placeholder="Username" />
+          <input type="password" id="signup-password" placeholder="Create a Password" />
+          <button>Sign Up</button>
+        </form>
+      </div>
+ END-->   
+
+  <div class="container">  
+      <div class="span9">
+
+     <!-- List of Rooms
+        ================================================== -->
+        <section id="typography">
+            <select name="mydropdown" class="styled" id="listOfRooms" onChange="document.location = this.value" value="GO">
+              <option value="">Select One of Your Rooms</option>
+            </select>
+            </section>
+      </div>
+  </div>
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Can't find an event? Contact the <a href="" target="_blank">Mycrophone Team</a>.</p>
+        <p>Are you hosting an event? Use Mycrophone for a hassle-free Q&A session. See our <a href="" target="_blank">First Time Host</a> guide.</p>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+    <script type="text/javascript">
+    
+    Parse.initialize("0w1BQIQrHtpBYfFm1qkNGYlwLvMLmAhXROfdul3u", "y979JGQ2fd6O2i91RcOWprR2iqNU5EYJQdDtLjgc");
+
+    var Allentries = Parse.Object.extend("Room");
+    var allentriesFind = new Parse.Query(Allentries);
+    var room_array = Array();
+    var room_array2 = Array();
+    var listRooms = document.getElementById("listOfRooms");
+
+
+    //searches for anything stored in Questions
+    allentriesFind.find({
+      success: function(results) {
+        $(".successRoomsFind").show();
+        //goes thru each item in the results and stores the attributes associated with room in an array called room_array
+        for (i=0; i < results.length; i++) {
+          console.log("this is test number: " + i);
+          var temp = results[i].attributes['Room_Name'];
+          //the default assumption is that the word is unique and should be added to the approved list to push to html...
+          var addMeMaybe = true;
+          for (j=0; j <= room_array.length - 1; j++) {
+
+              //console.log("this is the word in the approved array of rooms: " + room_array[j]);
+              //console.log("this is the word I am testing: " +temp);
+              if (temp == room_array[j]) {
+                  //but if the temp word is ever equal to the word in the approved list, then change the value of addMeMaybe so that the word will not be added to the list
+                  addMeMaybe = false; 
+              } 
+          }
+          console.log("it is " + addMeMaybe + " that " + temp + " will be added to the room array");
+          if (addMeMaybe == true) {
+              room_array.push(temp);
+          }
+        }
+        
+        console.log(room_array);
+        
+
+        for (i=0; i < room_array.length; i++) {
+
+          room_array2.push("<tr><td><option value=\"myrooms/audioroom.html#" + room_array[i] + "\">" + room_array[i] + "</a> </td></tr>");
+        }
+        //console.log(room_array2);
+        //.join deletes all of the commas in between objects in the array
+        listRooms.innerHTML += "" + room_array2.join("");
+        //alert(q_array);
+        
+      },
+      error: function(error) {
+        alert("Error: " + error.code + " " + error.message);
+      }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // LOGIN code BELOW
+        var user = new Parse.User();
+        user.set("username", "my name");
+        user.set("password", "my pass");
+        user.set("email", "email@example.com");
+
+        // other fields can be set just like with Parse.Object
+        user.set("phone", "415-392-0202");
+
+        user.signUp(null, {
+        success: function(user) {
+          // Hooray! Let them use the app now.
+        },
+        error: function(user, error) {
+          // Show the error message somewhere and let the user try again.
+          //alert("Error: " + error.code + " " + error.message);
+        }
+        });
+
+        Parse.User.logIn(username, password, {
+        success: function(user) {
+          new ManageTodosView();
+          self.undelegateEvents();
+          delete self;
+        },
+        error: function(user, error) {
+          self.$(".login-form .error").html("Invalid username or password. Please try again.").show();
+          this.$(".login-form button").removeAttr("disabled");
+        }
+        });
+
+        Parse.User.signUp(username, password, { ACL: new Parse.ACL() }, {
+        success: function(user) {
+          new ManageTodosView();
+          self.undelegateEvents();
+          delete self;
+        },
+        error: function(user, error) {
+          self.$(".signup-form .error").html(error.message).show();
+          this.$(".signup-form button").removeAttr("disabled");
+        }
+        });
+
+
+
+        </script>
+
+
+  </body>
+</html>

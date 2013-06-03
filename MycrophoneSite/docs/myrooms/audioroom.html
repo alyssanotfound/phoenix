@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hosts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../assets/css/docs.css" rel="stylesheet">
+    <link href="../assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <script src="../js/underscore-1.1.6.js"></script>
+    <script type="text/javascript" src="https://www.parse.com/downloads/javascript/parse-1.2.2.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.2.min.js"></script>
+    <script> 
+    console.log(window.location.hash.replace("#", ""));
+    var selectedRoom = window.location.hash.replace("#", "");
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="../index.html">Mycrophone</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="../events.html">Events</a>
+              </li>
+              <li class="">
+                <a href="../speakers.html">Speakers</a>
+              </li>
+              <li class="">
+                <a href="../option.html">Hosts</a>
+              </li>
+              <li class="">
+                <a href="../help.html">Help</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <img src="../assets/img/logoMycrophone-01.png" height="120" width="120" align="right"  >
+    <h1>Browse Audio Questions</h1>
+    <p class="lead">Room <span id="currentRoom"></span> </p>
+    <p class="lead"> <span id="currentRoomName"></span></p>
+  <div>
+  <div style="display:none" class="successRoomsFind">
+              The Queue has been retrieved.
+            </div>
+</header>
+ 
+
+    <div class="container">  
+      <div class="span9">
+
+     <!-- List of Rooms
+        ================================================== -->
+    <div style="display:none" class="successSaveA">
+              Your question was added. 
+    </div>
+
+    <div style="display:none" class="errorSaveA">
+      Error adding question.
+    </div>
+
+        <section id="typography">
+          
+            <table class="table table-striped table-bordered" id="listOfRooms">
+              <thead>
+                <tr class="lead">
+                  <th>Position</th>
+                  <th>User</th>
+                  <th>Question</th>
+                  <th>Answer</th>
+                </tr>
+              </thead>
+            </table>
+        </section>
+
+
+          </div>
+        </div>
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Can't find an event? Contact the <a href="" target="_blank">Mycrophone Team</a>.</p>
+        <p>Are you hosting an event? Use Mycrophone for a hassle-free Q&A session. See our <a href="" target="_blank">First Time Host</a> guide.</p>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script src="../assets/js/bootstrap-affix.js"></script>
+
+    <script src="../assets/js/holder/holder.js"></script>
+    <script src="../assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="../assets/js/application.js"></script>
+
+    <script type="text/javascript">
+    
+    Parse.initialize("0w1BQIQrHtpBYfFm1qkNGYlwLvMLmAhXROfdul3u", "y979JGQ2fd6O2i91RcOWprR2iqNU5EYJQdDtLjgc");
+
+    var currentRoom = document.getElementById("currentRoom");
+    currentRoom.innerHTML = selectedRoom;
+
+    var Allentries = Parse.Object.extend("Audio");
+    var allentries = new Allentries();
+    var allentriesFind = new Parse.Query(Allentries);
+    var room_array = Array();
+    var room_array2 = Array();
+    var user_array = Array();
+    var id_array = Array();
+    var position_array = Array();
+    var status_array = Array();
+    var listRooms = document.getElementById("listOfRooms");
+    var statusClass_array = Array();
+    var selectedRoomName ="";
+    
+      if (selectedRoom == 1) { 
+      selectedRoomName += "Bone-Cro"; 
+    } else if (selectedRoom == 2) {
+      selectedRoomName += "iPhone App";
+    } else if (selectedRoom == 3) {
+      selectedRoomName += "Speedy Capper";
+    } else if (selectedRoom == 4) {
+      selectedRoomName += "Gym Theater";
+    } else if (selectedRoom == 5) {
+      selectedRoomName += "3D Target";
+    } else if (selectedRoom == 6) {
+      selectedRoomName += "Folding Bike";
+    } else if (selectedRoom == 7) {
+      selectedRoomName += "Transmission";
+    } else if (selectedRoom == 8) {
+      selectedRoomName += "MYcrophone";
+    }
+      currentRoomName.innerHTML = selectedRoomName;
+      console.log("this is the selected room" + selectedRoom + selectedRoomName);
+    
+    //searches for anything stored in Questions
+    allentriesFind.equalTo("Room", selectedRoom);
+    //allentriesFind.equalTo("Status", "Unanswered");
+    //allentriesFind.ascending("Position");
+    //function to run when the host presses 'answer this question'
+     
+     function answerQ(objectId)
+        {
+        var a1 = prompt('Describe the Answer to this Question.');
+        console.log(a1);
+        console.log(objectId);
+
+        allentries.id = objectId;
+
+        allentries.save(null, {
+          success: function(allentries) {
+            allentries.set("Answer", a1);
+            allentries.set("Status", "Answered");
+            allentries.save();
+          }
+        });
+        }
+
+
+    allentriesFind.find({
+      success: function(results) {
+        $(".successRoomsFind").show();
+        //goes thru each item in the results and stores the attributes associated with room in an array called room_array
+        for (i=0; i < results.length; i++) {
+          if (results[i].attributes['Audio_File'] != undefined) {
+
+              if (results[i].attributes['Status'] == "Unanswered") {
+              statusClass_array[i] = "unansweredColor";
+              id_array[i] = "<td><button type=\"button\" onclick=\"answerQ(\'" + results[i].id + "\')\">Call on this Person Now!</button></td>" ;
+          } else if (results[i].attributes['Status'] == "Answered"){
+              statusClass_array[i] = "answeredColor";
+              id_array[i] = "<td>" + results[i].attributes['Answer'] + "</td>" ;
+          }
+
+
+          console.log("found: " + results[i].attributes['Audio_File'].url + " asked by with the id " + results[i].id + " and it is ");
+          position_array.push(results[i].attributes['Position']);
+          room_array.push(results[i].attributes['Audio_File'].url);
+          id_array.push(results[i].id);
+          status_array.push(results[i].attributes['Status']);
+          user_array.push(results[i].attributes['Username']);
+          statusClass_array.push();
+          }
+          
+        }
+        //console.log(position_array);
+        console.log(user_array);
+        console.log(room_array);
+        console.log(id_array);
+        console.log(statusClass_array);
+        
+        
+        
+
+        for (i=0; i < room_array.length; i++) {
+          //var currentId = id_array[i];
+          //console.log(id_array[i]);
+          room_array2.push("<tr class=\"" + status_array[i] + "\"><td> " + position_array[i] + " </td><td> " + user_array[i] + " </td><td><a href=\"" + room_array[i] + "\" target=\"_blank\">Play This Audio Question</a></td>" + id_array[i] + "</tr>");
+        }
+        console.log(room_array2);
+        //console.log(room_array2);
+        //.join deletes all of the commas in between objects in the array
+        listRooms.innerHTML += "" + room_array2.join("");
+        
+        
+      },
+      error: function(error) {
+        alert("Error: " + error.code + " " + error.message);
+      }
+    });
+
+
+        
+        </script>
+
+
+  </body>
+</html>
