@@ -1,0 +1,2 @@
+This is a test for EGit.
+Let's see if it works.
